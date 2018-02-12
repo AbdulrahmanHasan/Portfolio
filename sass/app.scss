@@ -1,10 +1,28 @@
 // Sass Comment
-
 /* CSS comment */
 body {
-  background-color: white;
+  min-height: 600px;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
 }
 
-.navbar {
-  color:red;
+.header {
+  background: url("../images/Background.jpeg");
+  height: 600px;
+
+  .nav-bar {
+    margin-top: 8rem;
+
+    .navbar-nav a {
+      color: #000;
+      margin: 1px;
+      border-bottom: 2px solid transparent;
+
+      &:active,
+      &:hover {
+        color: #6EBFAB;
+        border-bottom: 2px solid #6EBFAB;
+      }
+    }
+  }
 }
