@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 // });
 
 gulp.task('sass', function () {
-    return sass('sass/app.scss', {
+    return sass('sass/styles.scss', {
       sourcemap: true,
       style: 'compressed'
     })
