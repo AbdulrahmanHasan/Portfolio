@@ -13,5 +13,8 @@
     "gulp-ruby-sass": "^1.0.5",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "bootswatch": "^4.0.0"
   }
 }

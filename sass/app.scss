@@ -2,9 +2,17 @@
 // CSS comment
 body {
   font-family: 'Merriweather', serif;
-  font-size: 17px;
-}
-
-.header {
+  color: white;
+   font-size: 17px;
+   text-shadow:
+   0.05em 0 black,
+   0 0.05em black,
+   -0.05em 0 black,
+   0 -0.05em black,
+   -0.05em -0.05em black,
+   -0.05em 0.05em black,
+   0.05em -0.05em black,
+   0.05em 0.05em black;}
+p span h1 h2 h3 h4 h5 h6 {
 
 }

@@ -1,0 +1,6 @@
+.header {
+  @include backImage('../images/student.jpg')
+}
+.hi{
+@include backImage('../images/background.jpg');
+}

@@ -4,11 +4,11 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
 
-// gulp.task('js', function() {
-//   return gulp.src('builds/sassEssentials/js/myscript.js')
-//     .pipe(jshint('./.jshintrc'))
-//     .pipe(jshint.reporter('jshint-stylish'));
-// });
+gulp.task('js', function() {
+  return gulp.src('js/javascript.js')
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest('js'));
+});
 
 gulp.task('sass', function () {
     return sass('sass/styles.scss', {

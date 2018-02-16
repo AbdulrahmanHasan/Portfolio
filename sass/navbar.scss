@@ -1,10 +1,12 @@
-.nav-bar {
-
+nav {
+  font-size: 1.18rem;
+  margin:0;
+  background: transition;
   .navbar-nav a {
-
+    color:$white;
     &:active,
     &:hover {
-
+      color:$blue;
     }
   }
 }

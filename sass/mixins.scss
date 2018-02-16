@@ -1,0 +1,15 @@
+@mixin backImage($image, $height:100vh) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  height: $height;
+}
+
+@mixin transition($time:0.5s) {
+  -webkit-transition: ease $time;
+  -moz-transition: ease $time;
+  -ms-transition: ease $time;
+  -o-transition: ease $time;
+  transition: ease $time;
+}
