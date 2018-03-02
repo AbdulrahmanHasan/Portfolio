@@ -1,10 +1,7 @@
 header {
   @include image('../images/background.png', 100vh);
 }
-.first-class {
-  @include image('../images/images1.png', 50vh);
-  top:27%;
-}
+
 .hi{
 @include backImage('../images/background.jpg');
 }

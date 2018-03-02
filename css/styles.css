@@ -1,4 +1,60 @@
-body{font-family:'Merriweather', serif;color:white;font-size:17px;text-shadow:0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black}p,span,h1,h2,h3,h4,h5,h6{text-align:center}p,span,h1,h2,h3,h4,h5,h6{text-align:center}header h1 span{padding:3px;line-height:45px;font-weight:bold}header img{width:200px;height:200px}header{background:url("../images/background.png");background-position:center center;height:100vh}.first-class{background:url("../images/images1.png");background-position:center center;height:50vh;top:27%}.hi{background:url("../images/background.jpg");background-repeat:no-repeat;background-position:center center;background-size:cover;height:100vh;filter:brightness(100%)}nav{font-size:1.18rem;margin:0}nav .navbar-nav a{color:#EAEAEA}nav .navbar-nav a:active,nav .navbar-nav a:hover{color:#17a2b8}
+/*
+Error: Invalid CSS after "$blue": expected selector or at-rule, was ": #17a2b8;"
+        on line 3 of sass/variables.scss
+        from line 1 of sass/styles.scss
 
+1: $main-color:
+2: 
+3: $blue: #17a2b8;
+4: $black: #252A34;
+5: $red: #F38181;
+6: $white: #EAEAEA;
+7: $darkBlue: #2B2E4A;
+8: $orange: #E84545;
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBRUEsSUFBSyxDQUNILFdBQVcsQ0FBRSxxQkFBcUIsQ0FDbEMsS0FBSyxDQUFFLEtBQUssQ0FDWCxTQUFTLENBQUUsSUFBSSxDQUNmLFdBQVcsQ0FDWCx3SkFPbUIsQ0FDdEIsd0JBQWdDLENBQzlCLFVBQVUsQ0FBRSxNQUFNLENBRXBCLHdCQUFnQyxDQUM5QixVQUFVLENBQUUsTUFBTSxDQUVwQixjQUFjLENBQ1osT0FBTyxDQUFFLEdBQUcsQ0FDWixXQUFXLENBQUUsSUFBSSxDQUNqQixXQUFXLENBQUUsSUFBSSxDQUVuQixVQUFXLENBQ1QsS0FBSyxDQUFDLEtBQUssQ0FDWCxNQUFNLENBQUUsS0FBSyxDQzVCZixNQUFPLENDU0wsVUFBVSxDQUFFLCtCQUFXLENBQ3ZCLG1CQUFtQixDQUFFLGFBQWEsQ0FDbEMsTUFBTSxDRFZxQyxLQUFLLENBRWxELFlBQWEsQ0NNWCxVQUFVLENBQUUsNEJBQVcsQ0FDdkIsbUJBQW1CLENBQUUsYUFBYSxDQUNsQyxNQUFNLENEUGtDLElBQUksQ0FDNUMsR0FBRyxDQUFDLEdBQUcsQ0FFVCxHQUFHLENDTkQsVUFBVSxDQUFFLCtCQUFXLENBQ3ZCLGlCQUFpQixDQUFFLFNBQVMsQ0FDNUIsbUJBQW1CLENBQUUsYUFBYSxDQUNsQyxlQUFlLENBQUMsS0FBSyxDQUNyQixNQUFNLENBTHlCLEtBQUssQ0FNcEMsTUFBTSxDQUFFLGdCQUFtQixDQ043QixHQUFJLENBQ0YsU0FBUyxDQUFFLE9BQU8sQ0FDbEIsTUFBTSxDQUFDLENBQUMsQ0FDUixpQkFBYyxDQUNaLEtBQUssQ0MrRDJCLE9BQU0sQ0Q5RHRDLGdEQUNRLENBQ04sS0FBSyxDQ3FDSyxPQUFLIiwic291cmNlcyI6WyJhcHAuc2NzcyIsImJhY2tncm91bmRzLnNjc3MiLCJtaXhpbnMuc2NzcyIsIm5hdmJhci5zY3NzIiwidmFyaWFibGVzLnNjc3MiXSwibmFtZXMiOltdLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIFNhc3MgQ29tbWVudFxyXG4vLyBDU1MgY29tbWVudFxyXG5ib2R5IHtcclxuICBmb250LWZhbWlseTogJ01lcnJpd2VhdGhlcicsIHNlcmlmO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICAgZm9udC1zaXplOiAxN3B4O1xyXG4gICB0ZXh0LXNoYWRvdzpcclxuICAgMC4wNWVtIDAgYmxhY2ssXHJcbiAgIDAgMC4wNWVtIGJsYWNrLFxyXG4gICAtMC4wNWVtIDAgYmxhY2ssXHJcbiAgIDAgLTAuMDVlbSBibGFjayxcclxuICAgLTAuMDVlbSAtMC4wNWVtIGJsYWNrLFxyXG4gICAtMC4wNWVtIDAuMDVlbSBibGFjayxcclxuICAgMC4wNWVtIC0wLjA1ZW0gYmxhY2ssXHJcbiAgIDAuMDVlbSAwLjA1ZW0gYmxhY2s7fVxyXG5wLCBzcGFuLCBoMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxucCwgc3BhbiwgaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbmhlYWRlciBoMSBzcGFue1xyXG4gIHBhZGRpbmc6IDNweDtcclxuICBsaW5lLWhlaWdodDogNDVweDtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5oZWFkZXIgaW1nIHtcclxuICB3aWR0aDoyMDBweDtcclxuICBoZWlnaHQ6IDIwMHB4O1xyXG59XHJcbiIsImhlYWRlciB7XHJcbiAgQGluY2x1ZGUgaW1hZ2UoJy4uL2ltYWdlcy9iYWNrZ3JvdW5kLnBuZycsIDEwMHZoKTtcclxufVxyXG4uZmlyc3QtY2xhc3Mge1xyXG4gIEBpbmNsdWRlIGltYWdlKCcuLi9pbWFnZXMvaW1hZ2VzMS5wbmcnLCA1MHZoKTtcclxuICB0b3A6MjclO1xyXG59XHJcbi5oaXtcclxuQGluY2x1ZGUgYmFja0ltYWdlKCcuLi9pbWFnZXMvYmFja2dyb3VuZC5qcGcnKTtcclxufVxyXG4iLCJAbWl4aW4gYmFja0ltYWdlKCRpbWFnZSwgJGhlaWdodDoxMDB2aCwkZmlsdGVyOjEwMCUpIHtcclxuICBiYWNrZ3JvdW5kOiB1cmwoJGltYWdlKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlciBjZW50ZXI7XHJcbiAgYmFja2dyb3VuZC1zaXplOmNvdmVyO1xyXG4gIGhlaWdodDogJGhlaWdodDtcclxuICBmaWx0ZXI6IGJyaWdodG5lc3MoJGZpbHRlcik7XHJcbn1cclxuQG1peGluIGltYWdlKCRpbWFnZSwgJGhlaWdodDoxMDB2aCkge1xyXG4gIGJhY2tncm91bmQ6IHVybCgkaW1hZ2UpO1xyXG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlciBjZW50ZXI7XHJcbiAgaGVpZ2h0OiAkaGVpZ2h0O1xyXG59XHJcblxyXG5AbWl4aW4gdHJhbnNpdGlvbigkdGltZTowLjVzKSB7XHJcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBlYXNlICR0aW1lO1xyXG4gIC1tb3otdHJhbnNpdGlvbjogZWFzZSAkdGltZTtcclxuICAtbXMtdHJhbnNpdGlvbjogZWFzZSAkdGltZTtcclxuICAtby10cmFuc2l0aW9uOiBlYXNlICR0aW1lO1xyXG4gIHRyYW5zaXRpb246IGVhc2UgJHRpbWU7XHJcbn1cclxuIiwibmF2IHtcclxuICBmb250LXNpemU6IDEuMThyZW07XHJcbiAgbWFyZ2luOjA7XHJcbiAgLm5hdmJhci1uYXYgYSB7XHJcbiAgICBjb2xvcjokd2hpdGU7XHJcbiAgICAmOmFjdGl2ZSxcclxuICAgICY6aG92ZXIge1xyXG4gICAgICBjb2xvcjokYmx1ZTtcclxuICAgIH1cclxuICB9XHJcbn1cclxuIiwiJGJsdWU6ICMxN2EyYjg7XHJcbiRibGFjazogIzI1MkEzNDtcclxuJHJlZDogI0YzODE4MTtcclxuJHdoaXRlOiAjRUFFQUVBO1xyXG4kZGFya0JsdWU6ICMyQjJFNEE7XHJcbiRvcmFuZ2U6ICNFODQ1NDU7XHJcbiRkYXJrUmVkOiAjOTAzNzQ5O1xyXG4kYnJvd246ICM1MzM1NEE7XHJcblxyXG5cclxuXHJcbi8vIENlcnVsZWFuIDQuMC4wXHJcbi8vIEJvb3Rzd2F0Y2hcclxuXHJcbi8vXHJcbi8vIENvbG9yIHN5c3RlbVxyXG4vL1xyXG5cclxuJHdoaXRlOiAgICAjZmZmICFkZWZhdWx0O1xyXG4kZ3JheS0xMDA6ICNmOGY5ZmEgIWRlZmF1bHQ7XHJcbiRncmF5LTIwMDogI2U5ZWNlZiAhZGVmYXVsdDtcclxuJGdyYXktMzAwOiAjZGVlMmU2ICFkZWZhdWx0O1xyXG4kZ3JheS00MDA6ICNjZWQ0ZGEgIWRlZmF1bHQ7XHJcbiRncmF5LTUwMDogI2FkYjViZCAhZGVmYXVsdDtcclxuJGdyYXktNjAwOiAjODY4ZTk2ICFkZWZhdWx0O1xyXG4kZ3JheS03MDA6ICM0OTUwNTcgIWRlZmF1bHQ7XHJcbiRncmF5LTgwMDogIzM0M2E0MCAhZGVmYXVsdDtcclxuJGdyYXktOTAwOiAjMjEyNTI5ICFkZWZhdWx0O1xyXG4kYmxhY2s6ICAgICMwMDAgIWRlZmF1bHQ7XHJcblxyXG4kYmx1ZTogICAgIzAzM0M3MyAhZGVmYXVsdDtcclxuJGluZGlnbzogICM2NjEwZjIgIWRlZmF1bHQ7XHJcbiRwdXJwbGU6ICAjNmY0MmMxICFkZWZhdWx0O1xyXG4kcGluazogICAgI2U4M2U4YyAhZGVmYXVsdDtcclxuJHJlZDogICAgICNDNzFDMjIgIWRlZmF1bHQ7XHJcbiRvcmFuZ2U6ICAjZmQ3ZTE0ICFkZWZhdWx0O1xyXG4keWVsbG93OiAgI0RENTYwMCAhZGVmYXVsdDtcclxuJGdyZWVuOiAgICM3M0E4MzkgIWRlZmF1bHQ7XHJcbiR0ZWFsOiAgICAjMjBjOTk3ICFkZWZhdWx0O1xyXG4kY3lhbjogICAgIzJGQTRFNyAhZGVmYXVsdDtcclxuXHJcbiRwcmltYXJ5OiAgICAgICAkY3lhbiAhZGVmYXVsdDtcclxuJHNlY29uZGFyeTogICAgICRncmF5LTIwMCAhZGVmYXVsdDtcclxuJHN1Y2Nlc3M6ICAgICAgICRncmVlbiAhZGVmYXVsdDtcclxuJGluZm86ICAgICAgICAgICRibHVlICFkZWZhdWx0O1xyXG4kd2FybmluZzogICAgICAgJHllbGxvdyAhZGVmYXVsdDtcclxuJGRhbmdlcjogICAgICAgICRyZWQgIWRlZmF1bHQ7XHJcbiRsaWdodDogICAgICAgICAkZ3JheS0xMDAgIWRlZmF1bHQ7XHJcbiRkYXJrOiAgICAgICAgICAkZ3JheS04MDAgIWRlZmF1bHQ7XHJcblxyXG4vLyBCb2R5XHJcblxyXG4kYm9keS1jb2xvcjogICAgJGdyYXktNjAwICFkZWZhdWx0O1xyXG5cclxuLy8gRm9udHNcclxuXHJcbiRoZWFkaW5ncy1jb2xvcjogICAgICAgICAkY3lhbiAhZGVmYXVsdDtcclxuXHJcbi8vIERyb3Bkb3duc1xyXG5cclxuJGRyb3Bkb3duLWxpbmstY29sb3I6ICAgICAgICAgICAgJGJvZHktY29sb3IgIWRlZmF1bHQ7XHJcbiRkcm9wZG93bi1saW5rLWhvdmVyLWNvbG9yOiAgICAgICR3aGl0ZSAhZGVmYXVsdDtcclxuJGRyb3Bkb3duLWxpbmstaG92ZXItYmc6ICAgICAgICAgJHByaW1hcnkgIWRlZmF1bHQ7XHJcblxyXG4vLyBOYXZiYXJcclxuXHJcbiRuYXZiYXItZGFyay1jb2xvcjogICAgICAgICAgICAgICAgIHJnYmEoJHdoaXRlLC44KSAhZGVmYXVsdDtcclxuJG5hdmJhci1kYXJrLWhvdmVyLWNvbG9yOiAgICAgICAgICAgJHdoaXRlICFkZWZhdWx0O1xyXG4iXX0= */
+Backtrace:
+sass/variables.scss:3
+sass/styles.scss:1
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:23:in `load'
+C:/Ruby24-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$blue\": expected selector or at-rule, was \": #17a2b8;\"\A         on line 3 of sass/variables.scss\A         from line 1 of sass/styles.scss\A \A 1: $main-color:\A 2: \A 3: $blue: #17a2b8;\A 4: $black: #252A34;\A 5: $red: #F38181;\A 6: $white: #EAEAEA;\A 7: $darkBlue: #2B2E4A;\A 8: $orange: #E84545;"; }
