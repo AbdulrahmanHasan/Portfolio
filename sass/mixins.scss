@@ -1,8 +1,14 @@
-@mixin backImage($image, $height:100vh) {
+@mixin backImage($image, $height:100vh,$filter:100%) {
   background: url($image);
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
+  height: $height;
+  filter: brightness($filter);
+}
+@mixin image($image, $height:100vh) {
+  background: url($image);
+  background-position: center center;
   height: $height;
 }
 

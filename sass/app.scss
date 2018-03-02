@@ -13,6 +13,18 @@ body {
    -0.05em 0.05em black,
    0.05em -0.05em black,
    0.05em 0.05em black;}
-p span h1 h2 h3 h4 h5 h6 {
-
+p, span, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+p, span, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+header h1 span{
+  padding: 3px;
+  line-height: 45px;
+  font-weight: bold;
+}
+header img {
+  width:200px;
+  height: 200px;
 }
