@@ -1,7 +1,9 @@
 header {
-  @include image('../images/background.png', 100vh);
+  @include backImage('../images/background.jpg');
 }
-
-.hi{
-@include backImage('../images/background.jpg');
+.blackBG {
+  @include image('../images/b20.png', 1340px);
+}
+.heading {
+  @include image('../images/black1.jpg', 131px);
 }

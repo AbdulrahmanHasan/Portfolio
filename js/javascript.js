@@ -15,3 +15,23 @@
 //     $element.removeClass(fadeInDown);
 //   }
 // });
+
+
+$('.from-top').hover(function (){
+   $(this).find('span').eq(0).animate({
+     height: '100%'
+   },350);
+}, function () {
+  $(this).find('span').eq(0).animate({
+    height: 0
+  },350);
+});
+
+$(function () {
+  'use strict'
+
+  $('.backgrounds-height').height($(window).height());
+  $(window).resize(function() {
+    $('.backgrounds-height').height($(window).height());
+  })
+});

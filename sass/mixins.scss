@@ -1,17 +1,18 @@
-@mixin backImage($image, $height:100vh,$filter:100%) {
-  background: url($image);
+@mixin backImage($image) {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url($image);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size:cover;
-  height: $height;
-  filter: brightness($filter);
+  background-size: cover;
+  min-height: 654px;
 }
-@mixin image($image, $height:100vh) {
+@mixin image($image, $height:1340px) {
   background: url($image);
   background-position: center center;
-  height: $height;
+  min-height: $height
 }
-
 @mixin transition($time:0.5s) {
   -webkit-transition: ease $time;
   -moz-transition: ease $time;
