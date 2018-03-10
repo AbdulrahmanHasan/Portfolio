@@ -1,0 +1,33 @@
+
+.Projects {
+  min-height: auto!important;
+
+  .skitter .container_thumbs {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .skitter .info_slide_dots .image_number {
+    border: 1px solid $main-color;
+  }
+
+  h5 {
+    margin-bottom: 1.8rem;
+
+    .btn-outline-dark {
+      border-color: $black;
+      color: $main-color;
+      border-radius: 0;
+
+      &:hover {
+        background: $main-color;
+        color: $black;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .Projects h3 {
+    font-size: 1.35rem;;
+  }
+}

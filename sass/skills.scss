@@ -1,11 +1,5 @@
 .skills {
-  .heading {
-    margin: 0;
-    border-top: 1px solid $main-color;
-    border-bottom: 1px solid $main-color;
-    padding: 20px 10px;
-  }
-
+    height: auto!important;
   h1,
   h2,
   h3,
@@ -16,7 +10,10 @@
   span {
     text-align: center;
   }
-
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: -25px;
+  }
   h1 {
     text-transform: uppercase;
     font-size: 35px;
@@ -25,10 +22,9 @@
     margin: 0;
   }
 
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     height: 95px;
     margin-top: 10px;
-
     span {
       font-size: 1.5em;
       font-weight: normal;
@@ -42,7 +38,7 @@
     }
   }
 
-  .about {
+  .language {
     padding-top: 56px;
   }
 
@@ -78,38 +74,56 @@
     background: $main-color;
   }
 }
+
+
+
+
+#chartRadarGreen, #chartRadarOrange, #chartRadarYellow, #chartRadarBlue, .chartGreen, .chartOrange, .chartYellow, .chartBlue  {
+  display: none !important;
+}
 @media screen and (max-width:1200px) {
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     span {
-      left: 98px !important;
+      left: 47% !important;
     }
 
     .twoN {
-      left: 92px !important;
+      left: 44% !important;
     }
   }
 }
-@media screen and (max-width:767px) {
-  .skills {
-    height: auto !important;
-  }
-
+@media screen and (max-width:1199px) {
   .card-deck {
     margin-bottom: 19px;
   }
 
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     span {
-      left: 247px !important;
+      left: 46.5% !important;
     }
 
     .twoN {
-      left: 240px !important;
+      left: 42.5% !important;
     }
   }
 }
+@media screen and (max-width:767px) {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
+    span {
+      left: 48.7% !important;
+    }
+
+    .twoN {
+      left: 47.1% !important;
+    }
+  }
+  .language {
+    h3 {
+      display: none;
+    }
+  }
 @media screen and (max-width:576px) {
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     span {
       left: 48.6% !important;
     }
@@ -120,7 +134,7 @@
   }
 }
 @media screen and (max-width:425px) {
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     span {
       left: 48.1% !important;
     }
@@ -131,9 +145,18 @@
   }
 }
 @media screen and (max-width:375px) {
-  .chart {
+  .chartGreen, .chartOrange, .chartYellow, .chartBlue   {
     .twoN {
       left: 45.6% !important;
     }
   }
+}
+@media screen and (min-width:992px) {
+  #chartRadar {
+    max-width:360px;
+    max-height: 360px;
+    margin-left: 7.5%;
+
+  }
+}
 }

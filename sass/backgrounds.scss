@@ -1,9 +1,21 @@
 header {
   @include backImage('../images/background.jpg');
 }
-.blackBG {
-  @include image('../images/b20.png', 1340px);
+[data-default-color="green"] .skills.blackBG, [data-default-color="orange"] .skills.blackBG, [data-default-color="blue"] .skills.blackBG {
+  @include image('../images/b20.png', 1030px);
+}
+[data-default-color="yellow"] .skills.blackBG {
+  @include image('../images/b33.png', 1030px);
+}
+[data-default-color="yellow"] footer.blackBG {
+  @include image('../images/b33.png', 500px);
 }
 .heading {
   @include image('../images/black1.jpg', 131px);
+}
+.Projects.blackBG {
+  @include image('../images/b20.png');
+}
+footer.blackBG {
+  @include image('../images/b21.png',500px);
 }

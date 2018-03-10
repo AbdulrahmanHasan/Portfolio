@@ -8,6 +8,71 @@ p,
 span {
   text-align: center;
 }
+.menu {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  background: #f2f2f2;
+  text-align: center;
+  z-index: 9999;
+  line-height: 180px;
+  border-radius: 0px 4px 4px 0px;
+  left: 0px;
+  top: 40%;
+  border: 2px solid #3D9970;
+  .number1 {
+    padding:0;
+    margin-top: 8px;
+    [data-color="green"] {
+      background-color:#3D9970;
+    }
+    [data-color="orange"] {
+      background-color:#ee6817;
+    }
+    [data-color="yellow"] {
+      background-color:#ffdc00;
+    }
+    [data-color="blue"] {
+      background-color:#2196F3;
+    }
+  }
+}
+
+.menu .fa-angle-right {
+  position: absolute;
+  top: 51px;
+  right: -34px;
+  width: 32px;
+  height: 78px;
+  line-height: 80px;
+  background: #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 0px 7px 7px 0px;
+  cursor: pointer;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transition: transform 1s ease;
+}
+.is-visible .fa-angle-right {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: transform 1s ease;
+  border-radius: 7px 0px 0px 7px;
+}
+.change-colors.number1 li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
 
 .home {
   margin: 445px 0 0;

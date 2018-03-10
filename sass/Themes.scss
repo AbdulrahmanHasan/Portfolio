@@ -1,0 +1,156 @@
+// website Themes color
+
+  [data-default-color="green"] .skin-color {
+    color:#3D9970!important;
+  }
+  [data-default-color="green"] .skin-background {
+    background-color:#3D9970!important;
+    color:#fff!important;
+  }
+  [data-default-color="green"] .borderColor, [data-default-color="green"] .skitter .info_slide_dots .image_number {
+    border-color:#3D9970!important;
+  }
+[data-default-color="green"] #chartRadarGreen, [data-default-color="green"] .chartGreen  {
+  display: block!important;
+  }
+  [data-default-color="green"] .skin-hover:hover {
+    color:#3D9970!important;
+    @include transition(0.35s);
+  }
+
+
+  [data-default-color="orange"] .skin-color {
+    color:#ee6817!important;
+  }
+  [data-default-color="orange"] .skin-background {
+    background-color:#ee6817!important;
+    color:#fff!important;
+  }
+  [data-default-color="orange"] .borderColor, [data-default-color="orange"] .skitter .info_slide_dots .image_number {  //Dots Slider
+    border-color:#ee6817!important;
+  }
+  [data-default-color="orange"] #chartRadarOrange, [data-default-color="orange"] .chartOrange {
+    display: block!important;
+    }
+    [data-default-color="orange"] .skin-hover:hover {
+      color:#ee6817!important;
+      @include transition(0.35s);
+    }
+    [data-default-color="orange"] .navbar-nav a {
+     @include transition(0.35s);
+     &:hover {
+       color: #ee6817!important;
+     }
+     span:last-child {
+       position: relative;
+       z-index: 444;
+       margin-bottom: 3px;
+       &:after {
+         content: '';
+         display: block;
+         margin: auto;
+         height: 2px;
+         width: 0;
+         @include transition(0.35s);
+         z-index: 444;
+
+       }
+     }
+     a:hover span:last-child:after {
+       background: #ee6817!important
+     }
+   }
+
+
+  [data-default-color="yellow"] .skin-color {
+    color:#FFDC00!important;
+  }
+  [data-default-color="yellow"] .card {
+    background:#c7c7c7!important;
+  }
+  [data-default-color="yellow"] .skin-background {
+    background-color:#FFDC00!important;
+    color:#fff!important;
+  }
+  [data-default-color="yellow"] .skin-hover:hover {
+    color:#FFDC00!important;
+    @include transition(0.35s);
+  }
+  [data-default-color="yellow"] .borderColor, [data-default-color="yellow"] .skitter .info_slide_dots .image_number {
+    border-color:#FFDC00!important;
+  }
+  [data-default-color="yellow"] #chartRadarYellow, [data-default-color="yellow"] .chartYellow {
+    display: block!important;
+    }
+  [data-default-color="yellow"] .skills .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    top: -5px;
+}
+   [data-default-color="yellow"] .navbar-nav a {
+    @include transition(0.35s);
+    &:hover {
+      color: #FFDC00!important;
+    }
+    span:last-child {
+      position: relative;
+      z-index: 444;
+      margin-bottom: 3px;
+      &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0;
+        @include transition(0.35s);
+        z-index: 444;
+
+      }
+    }
+    a:hover span:last-child:after {
+      background: #FFDC00!important
+    }
+  }
+
+
+
+  [data-default-color="blue"] .skin-color {
+    color:#2196F3!important;
+  }
+  [data-default-color="blue"] .skin-background {
+    background-color:#2196F3!important;
+    color:#fff!important;
+  }
+  [data-default-color="blue"] .skin-hover:hover {
+    color:#2196F3!important;
+    @include transition(0.35s);
+  }
+  [data-default-color="blue"] .borderColor, [data-default-color="blue"] .skitter .info_slide_dots .image_number {
+    border-color:#2196F3!important;
+  }
+  [data-default-color="blue"] #chartRadarBlue, [data-default-color="blue"] .chartBlue {
+    display: block!important;
+  }
+  [data-default-color="blue"] .navbar-nav a {
+   @include transition(0.35s);
+   &:hover {
+     color: #2196F3!important;
+   }
+   span:last-child {
+     position: relative;
+     z-index: 444;
+     margin-bottom: 3px;
+     &:after {
+       content: '';
+       display: block;
+       margin: auto;
+       height: 2px;
+       width: 0;
+       @include transition(0.35s);
+       z-index: 444;
+
+     }
+   }
+   a:hover span:last-child:after {
+     background: #2196F3!important
+   }
+ }

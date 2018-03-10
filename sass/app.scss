@@ -11,8 +11,51 @@ body {
   font-size: 17px;
   text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
 }
-// @media screen and (max-width:767px) {
-//   .skills {
-//     height: auto !important;
-//   }
-// }
+
+.heading {
+  font-family: 'Open Sans';
+  margin: 0;
+  border-top: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+  padding: 20px 10px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #e0e0e0;
+    line-height: 89px;
+    margin: 0;
+  }
+}
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 800; src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2") format("woff2");
+}
+footer {
+  ul {
+    margin-top: 2rem;
+    text-align: start;
+
+  }
+  .number2 li {
+    margin-top: 13px;
+    cursor: pointer;
+    text-align: center;
+  }
+  h3, h4{
+    margin-top: 2rem;
+  }
+  .contant li {
+    margin: 0px 15px;
+    display: inline-block;
+    a {
+      color:#efefef;
+    }
+  }
+  .contant {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width:425px) {
+  .menu {
+    display:none
+  }
+}
