@@ -13,7 +13,7 @@
   [data-default-color="green"] #chartRadarGreen, [data-default-color="green"] .chartGreen  {
   display: block!important;
   }
-  [data-default-color="green"] .skin-hover:hover, [data-default-color="green"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  [data-default-color="green"] .hover:hover, [data-default-color="green"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color:#3D9970!important;
     @include transition(0.35s);
   }
@@ -35,7 +35,7 @@
   [data-default-color="orange"] #chartRadarOrange, [data-default-color="orange"] .chartOrange {
     display: block!important;
   }
-  [data-default-color="orange"] .skin-hover:hover, [data-default-color="orange"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  [data-default-color="orange"] .hover:hover, [data-default-color="orange"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color:#ee6817!important;
     @include transition(0.35s);
   }
@@ -105,7 +105,7 @@
     background-color:#2196F3!important;
     color:#fff!important;
   }
-  [data-default-color="blue"] .skin-hover:hover ,[data-default-color="blue"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  [data-default-color="blue"] .hover:hover ,[data-default-color="blue"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color:#2196F3!important;
     @include transition(0.35s);
   }

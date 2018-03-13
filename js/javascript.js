@@ -16,16 +16,6 @@
 //   }
 // });
 
-$('.from-top').hover(function (){
-   $(this).find('span').eq(0).animate({
-     height: '100%'
-   },350);
-}, function () {
-  $(this).find('span').eq(0).animate({
-    height: 0
-  },350);
-});
-
 $(function () {
   'use strict'
 

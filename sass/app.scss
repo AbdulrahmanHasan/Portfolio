@@ -5,15 +5,27 @@ body {
   font-family: 'Old Standard TT', serif;
   color: white;
   font-size: 17px;
+
+}
+body::-webkit-scrollbar {
+    width: 1em;
 }
 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(52, 52, 51);
+  outline: 1px solid slategrey;
+}
+
+ .scrolling-box {
+   scroll-behavior: smooth;
+ }
 .heading {
 
   margin: 0;
   border-top: 1px solid $main-color;
   border-bottom: 1px solid $main-color;
   padding: 20px 10px;
-  h1 {
+  h2 {
     text-transform: uppercase;
     font-size: 35px;
     color: #e0e0e0;
