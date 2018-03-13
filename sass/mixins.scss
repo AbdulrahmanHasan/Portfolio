@@ -4,9 +4,9 @@
       rgba(0, 0, 0, 0.5)
     ),url($image);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-size: cover;
-  min-height: 654px;
+  min-height: $height;
 }
 @mixin image($image, $height:500px) {
   background: url($image);

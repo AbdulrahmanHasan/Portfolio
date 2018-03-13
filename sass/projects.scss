@@ -2,28 +2,47 @@
 .Projects {
   min-height: auto!important;
 
-  .skitter .container_thumbs {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .skitter .info_slide_dots .image_number {
-    border: 1px solid $main-color;
-  }
-
-  h5 {
-    margin-bottom: 1.8rem;
-
-    .btn-outline-dark {
-      border-color: $black;
-      color: $main-color;
-      border-radius: 0;
-
-      &:hover {
-        background: $main-color;
-        color: $black;
-      }
+  .card {
+    margin-bottom: 0;
+    border: 0;
+    a {
+      color:#fff;
     }
+    .text-muted {
+      color: #fff!important;
+    }
+    .card-img {
+      border-radius: 0;
+    }
+    &::before,
+    &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.3s ease-out 0s;
+    background: rgba(0, 0, 0, 0.64);
+    content: '';
+    pointer-events: none;
+  }
+
+  &::before {
+    transform-origin: left top;
+  }
+
+  &::after {
+    transform-origin: right bottom;
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      transform: scale3d(0, 0, 1);
+    }
+  }
   }
 }
 @media screen and (max-width:768px) {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +17,14 @@
   <title>My Portfolio</title>
 </head>
 
-<body data-default-color="green">
-  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-example2">
+<body data-default-color="green" data-spy="scroll" data-target="#Navbar" data-offset="69">
+
+  <nav class="navbar navbar-expand-lg navbar-dark" id="Navbar">
     <button class="navbar-toggler borderColor" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mx-auto d-flex justify-content-between buttons-effect">
+      <div class="navbar-nav mx-auto d-flex justify-content-between buttons-effect nav-pills">
         <a class="nav-item nav-link from-top active borderColor skin-hover" href="#Home"><span></span><span>Home</span></a>
         <a class="nav-item nav-link from-top skin-hover" href="#Skills"><span></span><span>Skills</span></a>
         <span class="navbar-brand skin-color" href="#">Abdulrahman Hasan</span>
@@ -34,7 +34,8 @@
     </div>
   </nav>
 
-  <div id="menu" class="menu borderColor" style="left:-300px;"><i class="fas fa-angle-right fa-2x skin-background"></i>
+  <div id="menu" class="menu">
+    <div class="themes">Themes</div>
     <ul class="change-colors number1">
       <li data-color="green"></li>
       <li data-color="orange"></li>
@@ -197,62 +198,63 @@
     <div class="borderColor heading d-flex justify-content-center align-items-center">
       <h1>My Projects</h1>
     </div>
-    <div class="skitter skitter-large">
-      <!-- themes -->
-      <ul>
-        <li>
-          <a href="#"><img src="images/background.jpg" class="cube"/></a>
-          <div class="label_text"><h3>This Is My Portfolio</h3><h5><a href="#"><button class="btn btn-outline-dark btn-md">Try It</button></a></h5></div>
-        </li>
-        <li>
-          <a><img src="images/sad.jpg" class="blind"/></a>
-          <div class="label_text"><h5 class="skin-color">Coming Soon...</h5></div>
-        </li>
-        <li>
-          <a><img src="images/sad.jpg" class="circles"/></a>
-          <div class="label_text"><h5 class="skin-color">Coming Soon...</h5></div>
-        </li>
-      </ul>
+    <div class="card-group text-center">
+      <div class="card bg-dark border-light  text-white"><a href="#">
+        <img class="card-img" src="images/background1.png" alt="Card image">
+        <div class="card-img-overlay">
+        <h5 class="card-title">Portfolio</h5>
+        <div class="card-footer"><small class="text-muted">2 weeks ago</small></div>
+        </div></a>
+      </div>
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="images/sad.jpg" alt="Card image">
+        <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+        </div>
+      </div>
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="images/sad.jpg" alt="Card image">
+        <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="about blackBG" id="About">
     <div class="borderColor heading d-flex justify-content-center align-items-center">
-      <h1>About Website</h1>
+      <h1>About</h1>
     </div>
     <div class="container">
       <div class="row justify-content-sm-between ">
         <div class="col-md-5 col-sm-6 col-lg-4">
           <ul class="list-unstyled lead mx-xs-auto">
-            <li><span class="skin-color">Name:</span> Abdulrahman Hasan</li><hr class="skin-background">
-            <li><span class="skin-color">Date Of Birth:</span> 28 February 1996</li><hr class="skin-background">
-            <li><span class="skin-color">Nationality:</span> Syrian</li><hr class="skin-background">
-            <li><span class="skin-color">Address:</span> Antakya Narlıca 166 Antakya Reyhanlı Yolu, Hatay, Turkey</li><hr class="skin-background">
+            <li><span class="skin-color">Name: </span>Abdulrahman Hasan</li><hr class="skin-background">
+            <li><span class="skin-color">Date Of Birth: </span>28 February 1994</li><hr class="skin-background">
+            <li><span class="skin-color">Nationality: </span>Syrian</li><hr class="skin-background">
+            <li><span class="skin-color">Address: </span>Antakya Narlıca, Hatay, Turkey</li><hr class="skin-background">
           </ul>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <ul class="change-colors number2 list-unstyled lead">
-            <h3 class="skin-color">Themes</h3>
-            <li data-color="green"><a href="#"></a><span style="color:#3D9970;">Green </span>&<span style="color:#767373;"> Black</span></li>
-            <li data-color="orange"><a href="#"></a><span style="color:#ee6817;">Orange </span>&<span style="color:#767373;"> Black</span></li>
-            <li data-color="blue"><a href="#"></a><span style="color:#2196F3;">Blue </span>&<span style="color:#767373;">Black</span></li>
-            <li data-color="yellow"><a href="#"></a><span style="color:#FFDC00;">Yellow </span>&<span style="color:#fff;">White</span></li>
-          </ul>
+        <div class="col-md-6 col-sm-6 col-lg-4">
+          <h3 class="skin-color">Some Life Bookmarks!</h3>
+            <p class="lead">I attended Google Developer Challenge at Udacity, and have been subsequently awarded a corresponding Nanodegree program. I'm also attending the android track in One Million Arab Coders at Udacity as well. Moreover, I studied Automatic Controll At the University of Aleppo.</p>
         </div>
         <div class="col-md-12 col-sm-12 col-lg-4">
           <h3 class="skin-color">Let's Keep In Touch</h3>
           <ul class="list-unstyled contant">
-            <li><a href="https://www.facebook.com/abdulrahman.Hasan.1996" class="skin-hover"target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="https://github.com" class="skin-hover" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=00905513846511" class="skin-hover"target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
-            <li><a href="mailto:abdulrahmanhasan96@hotmail.com"class="skin-hover"target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
+            <li><a href="https://www.facebook.com/abdulrahman.Hasan.1996" class="hover"target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="https://github.com" class="hover" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=00905513846511" class="hover"target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+            <li><a href="mailto:abdulrahmanhasan96@hotmail.com"class="hover"target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- <div class="copyR" style="background-color:#eee;">
-      <p class="m-0" style="color:#767373;">Copyright <i class="far fa-copyright fa-sm"></i> 2018 by Abdulrahman Hasan. All Rights Reserved.</p>
-    </div> -->
+    <div class="copyR">
+      <p class="m-0">Copyright <i class="far fa-copyright fa-sm"></i> 2018 by Abdulrahman Hasan. All Rights Reserved.</p>
+    </div>
   </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>

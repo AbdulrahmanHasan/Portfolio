@@ -7,17 +7,20 @@
     background-color:#3D9970!important;
     color:#fff!important;
   }
-  [data-default-color="green"] .borderColor, [data-default-color="green"] .skitter .info_slide_dots .image_number {
+  [data-default-color="green"] .borderColor {
     border-color:#3D9970!important;
   }
-[data-default-color="green"] #chartRadarGreen, [data-default-color="green"] .chartGreen  {
+  [data-default-color="green"] #chartRadarGreen, [data-default-color="green"] .chartGreen  {
   display: block!important;
   }
-  [data-default-color="green"] .skin-hover:hover {
+  [data-default-color="green"] .skin-hover:hover, [data-default-color="green"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color:#3D9970!important;
     @include transition(0.35s);
   }
-
+  [data-default-color="green"] .navbar-nav a:hover span:last-child:after {
+    width: 100%;
+    background: #3D9970;
+  }
 
   [data-default-color="orange"] .skin-color {
     color:#ee6817!important;
@@ -26,58 +29,49 @@
     background-color:#ee6817!important;
     color:#fff!important;
   }
-  [data-default-color="orange"] .borderColor, [data-default-color="orange"] .skitter .info_slide_dots .image_number {  //Dots Slider
+  [data-default-color="orange"] .borderColor {
     border-color:#ee6817!important;
   }
   [data-default-color="orange"] #chartRadarOrange, [data-default-color="orange"] .chartOrange {
     display: block!important;
-    }
-    [data-default-color="orange"] .skin-hover:hover {
-      color:#ee6817!important;
-      @include transition(0.35s);
-    }
-    [data-default-color="orange"] .navbar-nav a {
-     @include transition(0.35s);
-     &:hover {
-       color: #ee6817!important;
-     }
-     span:last-child {
-       position: relative;
-       z-index: 444;
-       margin-bottom: 3px;
-       &:after {
-         content: '';
-         display: block;
-         margin: auto;
-         height: 2px;
-         width: 0;
-         @include transition(0.35s);
-         z-index: 444;
-
-       }
-     }
-     a:hover span:last-child:after {
-       background: #ee6817!important
-     }
-   }
-
-
-  [data-default-color="yellow"] .skin-color {
-    color:#FFDC00!important;
   }
-  [data-default-color="yellow"] .card {
-    background:#c7c7c7!important;
-  }
-  [data-default-color="yellow"] .skin-background {
-    background-color:#FFDC00!important;
-    color:#fff!important;
-  }
-  [data-default-color="yellow"] .skin-hover:hover {
-    color:#FFDC00!important;
+  [data-default-color="orange"] .skin-hover:hover, [data-default-color="orange"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color:#ee6817!important;
     @include transition(0.35s);
   }
-  [data-default-color="yellow"] .borderColor, [data-default-color="yellow"] .skitter .info_slide_dots .image_number {
-    border-color:#FFDC00!important;
+  [data-default-color="orange"] .navbar-nav a {
+   @include transition(0.35s);
+   &:hover {
+     color: #ee6817!important;
+   }
+ }
+ [data-default-color="orange"] .navbar-nav a:hover span:last-child:after {
+   width: 100%;
+   background: #ee6817;
+   z-index: 9999;
+ }
+
+  [data-default-color="yellow"] .skin-color {
+    color:#F1C40F!important;
+  }
+  [data-default-color="yellow"] .card {
+    background:#34495E!important;
+  }
+  [data-default-color="yellow"] .skin-background {
+    background-color:#F1C40F!important;
+    color:#fff!important;
+  }
+  [data-default-color="yellow"] .skin-hover:hover, [data-default-color="yellow"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color:#F1C40F!important;
+    background: rgba(255, 255, 255, 0.38) !important;
+    @include transition(0.35s);
+  }
+  [data-default-color="yellow"] .hover:hover {
+    color:#F1C40F!important;
+    @include transition(0.5s);
+  }
+  [data-default-color="yellow"] .borderColor {
+    border-color:#F1C40F!important;
   }
   [data-default-color="yellow"] #chartRadarYellow, [data-default-color="yellow"] .chartYellow {
     display: block!important;
@@ -89,29 +83,20 @@
    [data-default-color="yellow"] .navbar-nav a {
     @include transition(0.35s);
     &:hover {
-      color: #FFDC00!important;
-    }
-    span:last-child {
-      position: relative;
-      z-index: 444;
-      margin-bottom: 3px;
-      &:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 2px;
-        width: 0;
-        @include transition(0.35s);
-        z-index: 444;
-
-      }
-    }
-    a:hover span:last-child:after {
-      background: #FFDC00!important
+      color: #F1C40F!important;
     }
   }
-
-
+  [data-default-color="yellow"] .navbar-nav a:hover span:last-child:after {
+    width: 100%;
+    background: #F1C40F;
+  }
+  [data-default-color="yellow"]  .card
+  {
+    &::before,&::after {
+      background: rgba(153, 153, 153, 0.51);
+      transition: transform 0.3s ease-out 0s;
+    }
+  }
 
   [data-default-color="blue"] .skin-color {
     color:#2196F3!important;
@@ -120,11 +105,11 @@
     background-color:#2196F3!important;
     color:#fff!important;
   }
-  [data-default-color="blue"] .skin-hover:hover {
+  [data-default-color="blue"] .skin-hover:hover ,[data-default-color="blue"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color:#2196F3!important;
     @include transition(0.35s);
   }
-  [data-default-color="blue"] .borderColor, [data-default-color="blue"] .skitter .info_slide_dots .image_number {
+  [data-default-color="blue"] .borderColor {
     border-color:#2196F3!important;
   }
   [data-default-color="blue"] #chartRadarBlue, [data-default-color="blue"] .chartBlue {
@@ -135,22 +120,8 @@
    &:hover {
      color: #2196F3!important;
    }
-   span:last-child {
-     position: relative;
-     z-index: 444;
-     margin-bottom: 3px;
-     &:after {
-       content: '';
-       display: block;
-       margin: auto;
-       height: 2px;
-       width: 0;
-       @include transition(0.35s);
-       z-index: 444;
-
-     }
-   }
-   a:hover span:last-child:after {
-     background: #2196F3!important
-   }
+ }
+ [data-default-color="blue"] .navbar-nav a:hover span:last-child:after, a:active span:last-child:after {
+   width: 100%;
+   background: #2196F3;
  }

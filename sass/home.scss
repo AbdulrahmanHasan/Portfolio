@@ -9,20 +9,20 @@ span {
   text-align: center;
 }
 .menu {
-  position: absolute;
-  width: 300px;
-  height: 180px;
-  background: #f2f2f2;
-  text-align: center;
+  position: fixed;
+  width: 35px;
+  height: auto;
+  background: #ffffff4a;
   z-index: 9999;
-  line-height: 180px;
+  line-height: 1;
   border-radius: 0px 4px 4px 0px;
-  left: 0px;
+  left: -35px;
   top: 40%;
-  border: 2px solid #3D9970;
+
   .number1 {
     padding:0;
-    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     [data-color="green"] {
       background-color:#3D9970;
     }
@@ -38,38 +38,25 @@ span {
   }
 }
 
-.menu .fa-angle-right {
-  position: fixed;
-  top: 51px;
-  right: -34px;
-  width: 32px;
-  height: 78px;
-  line-height: 80px;
-  background: #f2f2f2;
-  background: #f2f2f2;
-  border-radius: 0px 7px 7px 0px;
+.themes {
+  position: absolute;
+  left: 35px;
+  text-indent: 0px;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  top: 13%;
+  background: #1d1a1a;
+  padding: 3px 2px;
+  border-radius: 0px 5px 5px 0;
+  color: #fff;
   cursor: pointer;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  transition: transform 1s ease;
-}
-.is-visible .fa-angle-right {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  transition: transform 1s ease;
-  border-radius: 7px 0px 0px 7px;
+  text-transform: uppercase;
+
 }
 .change-colors.number1 li {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  margin-top: 13px;
+  width: 25px;
+  height: 25px;
+  margin: 8px 5px;
   cursor: pointer;
 }
 

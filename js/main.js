@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function() {
 var options2 = {
   scaleColor: false,
   trackColor: 'rgba(0, 0, 0, 0.34)',
-  barColor: '#FFDC00',
+  barColor: '#F1C40F',
   lineWidth: 7,
   lineCap: 'butt',
   size: 95
@@ -168,12 +168,12 @@ var chartRadarData = {
   labels: ["HTML", "CSS", "Javascript", "Bootstrap", "jQuery", "Scss", "Git & Github", "Gulp.js"],
   datasets: [{
     label: "Skill Level",
-    backgroundColor: "#FFDC0080",
-    borderColor: "#FFDC00Cc",
-    pointBackgroundColor: "#FFDC00",
+    backgroundColor: "#F1C40F80",
+    borderColor: "#F1C40FCc",
+    pointBackgroundColor: "#F1C40F",
     pointBorderColor: "#fff",
     pointHoverBackgroundColor: "#2f2929",
-    pointHoverBorderColor: "#FFDC00",
+    pointHoverBorderColor: "#F1C40F",
     pointBorderWidth: 2,
     data: [9.5, 9.5, 4, 9.5, 4, 9.5, 5, 9.5]
   }]
@@ -246,4 +246,8 @@ $(document).ready(function() {
   $('.skitter-large').skitter({
     dots: true
     });
+});
+$(".nav .nav-link").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).addClass("active");
 });

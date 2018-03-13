@@ -36,7 +36,7 @@ $(function () {
 });
 
 // fixed menu
-$('.menu .fa-angle-right').on('click', function (){
+$('.menu .themes').on('click', function (){
   $(this).parent('.menu').toggleClass('is-visible');
   if ($(this).parent('.menu').hasClass('is-visible')) {
     $(this).parent('.menu').animate({
@@ -46,7 +46,7 @@ $('.menu .fa-angle-right').on('click', function (){
 
 } else {
   $(this).parent('.menu').animate({
-    left: '-300px',
+    left: '-35px',
     backGround:'#4E1402'
   },500);
 }
