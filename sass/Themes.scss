@@ -54,7 +54,7 @@
   [data-default-color="yellow"] .skin-color {
     color:#F1C40F!important;
   }
-  [data-default-color="yellow"] .card {
+  [data-default-color="yellow"] .card, [data-default-color="yellow"] .modal-content, [data-default-color="orange"] .card, [data-default-color="orange"] .modal-content{
     background:#34495E!important;
   }
   [data-default-color="yellow"] .skin-background {
@@ -66,6 +66,7 @@
     background: rgba(255, 255, 255, 0.38) !important;
     @include transition(0.35s);
   }
+
   [data-default-color="yellow"] .hover:hover {
     color:#F1C40F!important;
     @include transition(0.5s);

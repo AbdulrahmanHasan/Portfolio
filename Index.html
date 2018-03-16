@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href='css/styles.css'>
+
+  <link href="css/skitter.css" type="text/css" media="all" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/skitter.css" type="text/css" media="all"/>
   <!--[if it IE 9]>
   <script src="../respond.min.js"></script>
@@ -16,10 +19,17 @@
   <![endif]]-->
   <title>Personal Website</title>
 </head>
+<body data-default-color="green" data-spy="scroll" data-target="#Navbar" data-offset="70">
+
+
 <body data-default-color="green" data-spy="scroll" data-target="#Navbar" data-offset="69">
 
+
+<body data-default-color="green" data-spy="scroll" data-target="#Navbar" data-offset="69">
+
+
   <nav class="navbar navbar-expand-lg navbar-dark" id="Navbar">
-    <button class="navbar-toggler borderColor" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -47,7 +57,7 @@
       <div class="side-bar col-lg-4 col-md-12 col-xs-12">
         <h3>Hello, I'm</h3>
         <h2><b>Abdulrahman</b></h2>
-        <h4 class="skin-color borderColor">Front-End Developer & Designer</h4>
+        <h4 class="skin-color borderColor">Front-End Developer</h4>
       </div>
     </div>
   </header>
@@ -60,15 +70,32 @@
       <div class="language row justify-content-lg-between">
         <div class="col-md-4 col-lg-3">
           <div class="card-deck">
-            <div class="card">
+            <div class="card" data-toggle="modal" data-target="#turkish">
               <h5 class="card-title">ENGLISH</h5>
               <div class="chartGreen mx-auto" data-percent="70"><span>7</span></div>
               <div class="chartOrange mx-auto" data-percent="70"><span>7</span></div>
               <div class="chartYellow mx-auto" data-percent="70"><span>7</span></div>
               <div class="chartBlue mx-auto" data-percent="70"><span>7</span></div>
               <div class="card-body">
-
-                <p class="card-text"><a href="images/English.jpeg" target="_blank" class="skin-color">Upper-Intermedite Dagree</a></p>
+                <!-- modal for ENGLISH dagree -->
+                <div class="modal fade" id="turkish" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-dark">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Intermedite Dagree</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="images/english Dagree.jpg" class="img-fluid" alt="turkish">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-info mx-auto btn-md" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div>
                   <h6>Reading</h6>
                   <div class="progress">
@@ -94,14 +121,32 @@
         </div>
         <div class="col-md-4 col-xm-10 col-lg-3">
           <div class="card-deck">
-            <div class="card">
+            <div class="card" data-toggle="modal" data-target="#turkish">
               <h5 class="card-title">TURKISH (TURKÇA)</h5>
               <div class="chartGreen mx-auto" data-percent="50"><span>5</span></div>
               <div class="chartOrange mx-auto" data-percent="50"><span>5</span></div>
               <div class="chartYellow mx-auto" data-percent="50"><span>5</span></div>
               <div class="chartBlue mx-auto" data-percent="50"><span>5</span></div>
               <div class="card-body">
-                <p class="card-text"><a href="images/Turkish.jpeg" class="skin-color" target="_blank">Elementary Dagree(A2)</a></p>
+                <!-- modal for tuckish dagree -->
+                <div class="modal fade" id="turkish" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-dark">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Elementary Dagree(A1)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="images/Turkish Dagree.jpg" class="img-fluid" alt="turkish">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-info mx-auto btn-md" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <section>
                   <h6>Reading (Okuma)</h6>
                   <div class="progress">
@@ -126,14 +171,13 @@
         </div>
         <div class="col-md-4 col-xm-10 col-lg-3">
           <div class="card-deck">
-            <div class="card">
+            <div class="card" style="cursor:auto;">
               <h5 class="card-title">ARABIC (العربية)</h5>
               <div class="chartGreen mx-auto" data-percent="100"><span class="twoN">10</span></div>
               <div class="chartOrange mx-auto" data-percent="100"><span class="twoN">10</span></div>
               <div class="chartYellow mx-auto" data-percent="100"><span class="twoN">10</span></div>
               <div class="chartBlue mx-auto" data-percent="100"><span class="twoN">10</span></div>
               <div class="card-body">
-                <p class="card-text"><a href="#" class="skin-color">It's My Native Language</a></p>
                 <section>
                   <h6>Reading (القراءة)</h6>
                   <div class="progress">
@@ -156,33 +200,14 @@
             </div>
           </div>
         </div>
-          <h3 class="col-md-7 col-sm-12 skin-color">Computer Skills</h3>
-          <h3 class="col-md-5 col-sm-12 skin-color">Web Skills</h3>
+          <h3 class="col-md-6 col-lg-6 col-sm-12 skin-color">Computer Skills</h3>
+          <h3 class="col-md-6 col-lg-5 col-sm-12 skin-color">Web Skills</h3>
       </div>
       <div class="row align-items-center justify-content-between">
-        <div class="col-md-7 col-sm-12 computer-skills">
-          <span>MS Word</span>
-          <div class="progress">
-            <div class="progress-bar skin-background bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-          </div>
-          <span>MS PowerPoint</span>
-          <div class="progress">
-            <div class="progress-bar skin-background bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-          </div>
-          <span>MS Outlook</span>
-          <div class="progress">
-            <div class="progress-bar skin-background bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-          <span>MS Excel</span>
-          <div class="progress">
-            <div class="progress-bar skin-background bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30">30%</div>
-          </div>
-          <span>Typing WPM</span>
-          <div class="progress">
-            <div class="progress-bar skin-background" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="42">42 WPM</div>
-          </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 computer-skills">
+          <canvas id="myBarChart"></canvas>
         </div>
-        <div class="wrapper col-md-5 col-sm-12 web-skills">
+        <div class="wrapper col-md-6 col-lg-5 col-sm-12 web-skills">
           <div class="chart w-100">
             <canvas id="chartRadarGreen"></canvas>
             <canvas id="chartRadarOrange"></canvas>
@@ -230,10 +255,10 @@
       <div class="row justify-content-sm-between ">
         <div class="col-md-5 col-sm-6 col-lg-4">
           <ul class="list-unstyled lead mx-xs-auto">
-            <li><span class="skin-color">Name: </span>Abdulrahman Hasan</li><hr />
-            <li><span class="skin-color">Date Of Birth: </span>28 February 1994</li><hr />
-            <li><span class="skin-color">Nationality: </span>Syrian</li><hr />
-            <li><span class="skin-color">Address: </span>Antakya Narlıca, Hatay, Turkey</li><hr />
+            <li><span class="skin-color">Name: </span>Abdulrahman Hasan</li><hr class="skin-background"/>
+            <li><span class="skin-color">Date Of Birth: </span>28 February 1996</li><hr class="skin-background"/>
+            <li><span class="skin-color">Nationality: </span>Syrian</li><hr class="skin-background"/>
+            <li><span class="skin-color">Address: </span>Antakya Narlıca, Hatay, Turkey</li><hr class="skin-background"/>
           </ul>
         </div>
         <div class="col-md-6 col-sm-6 col-lg-4">
@@ -258,9 +283,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
   <script src="js/chart.min.js"></script>
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.skitter.min.js"></script>
+  <!-- <script src="js/Chart.bundle.min"></script> -->
   <script type="text/javascript" src="js/popper.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>

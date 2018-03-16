@@ -79,8 +79,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 Chart.defaults.global.legend.display = false;
-Chart.defaults.global.defaultFontColor = 'rgba(182, 179, 179, 1)';
-
+Chart.defaults.global.defaultFontColor = 'rgba(182, 190, 184, 1)';
+Chart.defaults.global.defaultFontSize = 10
+// for green theme
 var chartRadarDOM = $('#chartRadarGreen');
 var chartRadarData = {
   labels: ["HTML", "CSS", "Javascript", "Bootstrap", "jQuery", "Scss", "Git & Github", "Gulp.js"],
@@ -103,7 +104,7 @@ var chartRadarOptions = {
       maxTicksLimit: 7
     },
     pointLabels: {
-      fontSize: 15
+      fontSize: 13
     },
     gridLines: {
       color: 'rgba(255, 255, 255, 0.5)'
@@ -119,8 +120,7 @@ var chartRadar = new Chart(chartRadarDOM, {
 
 
 
-Chart.defaults.global.legend.display = false;
-Chart.defaults.global.defaultFontColor = 'rgba(238, 238, 238, 1)';
+//for orange theme
 
 var chartRadarDOM = $('#chartRadarOrange');
 var chartRadarData = {
@@ -144,7 +144,7 @@ var chartRadarOptions = {
       maxTicksLimit: 7
     },
     pointLabels: {
-      fontSize: 15
+      fontSize: 13
     },
     gridLines: {
       color: 'rgba(255, 255, 255, 0.5)'
@@ -160,8 +160,7 @@ var chartRadar = new Chart(chartRadarDOM, {
 
 
 
-Chart.defaults.global.legend.display = false;
-Chart.defaults.global.defaultFontColor = 'rgba(182, 179, 179, 1)';
+//For yellow theme
 
 var chartRadarDOM = $('#chartRadarYellow');
 var chartRadarData = {
@@ -185,7 +184,7 @@ var chartRadarOptions = {
       maxTicksLimit: 7
     },
     pointLabels: {
-      fontSize: 15
+      fontSize: 13
     },
     gridLines: {
       color: '#00000080'
@@ -201,8 +200,7 @@ var chartRadar = new Chart(chartRadarDOM, {
 
 
 
-Chart.defaults.global.legend.display = false;
-Chart.defaults.global.defaultFontColor = 'rgba(73, 147, 87, 1)';
+// For blue theme
 
 var chartRadarDOM = $('#chartRadarBlue');
 var chartRadarData = {
@@ -226,7 +224,7 @@ var chartRadarOptions = {
       maxTicksLimit: 7
     },
     pointLabels: {
-      fontSize: 15
+      fontSize: 13
     },
     gridLines: {
       color: 'rgba(255, 255, 255, 0.5)'
@@ -240,17 +238,44 @@ var chartRadar = new Chart(chartRadarDOM, {
   options: chartRadarOptions
 });
 
+// computer skills bar myBarChart
 
-//slider
-$(document).ready(function() {
-  $('.skitter-large').skitter({
-    dots: true
-    });
-});
-$(".nav .nav-link").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).addClass("active");
-});
+ var barForCompSkill = $('#myBarChart');
+ var barSkills = new Chart(barForCompSkill, {
+   type: 'bar',
+   data: {
+     labels: ["Ms Word", "Ms PowerPoint", "MS outlook", "MS Excel", "Android Track", "Photoshop"],
+     datasets: [{
+       label: 'Computer Skills',
+       data: [10, 10, 9.5, 4, 4, 5,0],
+       backgroundColor: [
+         'rgba(255, 98, 132, 0.6)',
+         'rgba(54, 162, 235, 0.6)',
+         'rgba(255, 206, 68, 0.6)',
+         'rgba(75, 192, 192, 0.6)',
+         'rgba(153, 102, 255, 0.6)',
+         'rgba(255, 159, 64, 0.6)'
+       ],
+       borderColor: [
+         'rgba(255, 98, 132, 1)',
+         'rgba(54, 162, 235, 1)',
+         'rgba(255, 206, 68, 1)',
+         'rgba(75, 192, 192, 1)',
+         'rgba(153, 102, 255, 1)',
+         'rgba(255, 159, 64, 1)'
+       ],
+       borderWidth: 2,
+       hoverBackgroundColor: 'rgba(127, 208, 77, 0.49)',
+       hoverBorderColor: 'rgb(127, 208, 77)',
+     }]
+   },
+   options: {
+
+   gridLines: {
+     color: 'rgba(255, 255, 255, 0.5)'
+   }
+ }
+ });
 
 
 

@@ -5,7 +5,7 @@
   padding: 0;
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
   min-height:46px;
   .navbar-nav a {
     color: $white!important;
@@ -18,7 +18,7 @@
     overflow: hidden;
     border-radius: 0;
 
-    &:hover {
+    &:hover, &:active {
       color: $main-color!important;
     }
 
@@ -45,6 +45,9 @@
         @include transition(0.35s);
         z-index: 444;
       }
+    }
+    button {
+      border-color:#828282;
     }
   }
 
