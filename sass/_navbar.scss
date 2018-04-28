@@ -1,0 +1,75 @@
+.navbar {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.3rem;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9998;
+  min-height:46px;
+
+  .navbar-nav a {
+    color: $white!important;
+    padding: 0;
+    text-align: center;
+    @include transition(0.4s);
+    min-width: 140px;
+    line-height: 65px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    display: block;
+    width:100%;
+
+
+      &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        @include transition(0.4s);
+        z-index: 444;
+      }
+
+    button {
+      border-color:#828282;
+    }
+
+  }
+  &.fadeInDown a:hover , &.fadeInDown:active a {
+    background-color:  rgba(0,0,0,0.8);
+  }
+  .navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-right: 0;
+    cursor: default;
+    padding: 0 15px;
+    line-height: 69px;
+  }
+  .navbar-toggler {
+    margin: 14.5px 0 14.5px 5px;
+  }
+}
+.navbar-transparent {
+  background-color: transparent!important;
+    border-bottom: 2px solid rgba(159, 159, 159, 0.5);
+}
+.navbar-background {
+  border-bottom: 2px solid;
+  background-color: #282828!important;
+}
+$navLink: ".nav-pills .nav-link.active, .nav-pills .show > .nav-link";
+.navbar-background  #{$navLink} {
+  background:rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+}
+.navbar-transparent #{$navLink} {
+  background: transparent;
+  border-radius: 0;
+}
+
+.fadeIn .navbar-nav .active, .fadeIn .navbar-nav .nav-item:hover {
+  color:#fff!important;
+}

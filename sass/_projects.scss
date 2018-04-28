@@ -1,0 +1,75 @@
+.Projects {
+  min-height: auto!important;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  .card {
+    @media #{$tablet} {
+    border: 0!important;
+    border-bottom: 1px solid!important;
+     &:last-child {
+       border: 0!important;
+     }
+    }
+    margin-bottom: 0;
+    border: 0;
+    img {
+    opacity: 1;
+    border-radius: 0;
+    }
+
+    article {
+      @media #{$mobileL} {
+      height: 3.2em;
+      }
+      background: rgba(0, 0, 0, 0.71);
+      z-index: 1;
+      height: 3.73em;
+      top: auto;
+      overflow: hidden;
+      border-radius: 0;
+      @include transition(0.5s);
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        @media #{$mobileL} {
+          font-size: 1.35rem;
+        }
+      }
+      p {
+        text-transform: uppercase;
+        @media #{$mobileL} {
+          margin-bottom: 0.3em;
+          font-size: 11px;
+        }
+      }
+      hr {
+        width: 6em;
+        @media #{$mobileL} {
+        margin: 0.5rem auto;
+        }
+      }
+      a {
+        text-decoration: none;
+        button {
+          bottom: 15em;
+          @media #{$mobileL} {
+          padding: 0.175rem 0.35rem;
+          }
+        }
+      }
+    }
+    &:hover .ProjectCard {
+      height: 100%
+    }
+    &:hover button .fa-leanpub {
+      animation: heartPulse 2s infinite both linear;
+    }
+  }
+}
+@keyframes heartPulse {
+  from, to {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.2);
+  }
+}

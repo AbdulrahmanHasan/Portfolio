@@ -1,0 +1,56 @@
+@mixin backgroundM($image,$height:654px) {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url($image);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  min-height: $height;
+}
+
+@mixin image($image, $height:500px) {
+  background: url($image);
+  background-position: center center;
+  min-height: $height;
+}
+
+@mixin transition($time:0.5s) {
+  -webkit-transition: all $time ease;
+  -moz-transition:all $time ease;
+  -ms-transition:all $time ease;
+  -o-transition: $time ease;
+  transition:all $time ease;
+}
+
+@mixin MobileSScreen {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+@mixin MobileMScreen {
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    @content;
+  }
+}
+@mixin MobileLScreen {
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    @content;
+  }
+}
+@mixin tabletScreen {
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin labtopScreen {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin computerScreen {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}

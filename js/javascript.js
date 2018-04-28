@@ -1,21 +1,25 @@
-// var $document = $(document),
-//     $element = $('.navbar'),
-//     navbarDefault = 'navbar-dark bg-dark';
-//     navbarTransparent = 'navbar-transparent';
-//     fadeInDown = 'fadeInDown';
-//
-// $document.scroll(function(){
-//   if ($document.scrollTop() >= 720){
-//     $element.addClass(navbarDefault);
-//     $element.removeClass(navbarTransparent);
-//     $element.addClass(fadeInDown);
-//   }else{
-//     $element.removeClass(navbarDefault);
-//     $element.addClass(navbarTransparent);
-//     $element.removeClass(fadeInDown);
-//   }
-// });
+var $document         = $(document),
+    $element          = $('.navbar'),
+    navbarDefault     = 'navbar-background';
+    navbarTransparent = 'navbar-transparent';
+    fadeInDown        = 'fadeInDown';
+    fadeIn            = 'fadeIn';
 
+$document.scroll(function (){
+  if ($document.scrollTop() >= 150){
+    $element.addClass(navbarDefault);
+    $element.removeClass(navbarTransparent);
+    $element.removeClass(fadeIn);
+    $element.addClass(fadeInDown);
+    $element.addClass('borderColor');
+  } else {
+    $element.removeClass(navbarDefault);
+    $element.addClass(navbarTransparent);
+    $element.addClass(fadeIn);
+    $element.removeClass(fadeInDown);
+    $element.removeClass('borderColor')
+  }
+});
 $(function () {
   'use strict'
 
@@ -44,4 +48,27 @@ $('.menu .themes').on('click', function (){
 
 $('.change-colors li').on('click', function() {
   $('body').attr('data-default-color', $(this).data('color'));
-})
+});
+
+
+
+
+// skills heading
+swirl()
+function swirl(){
+$(".heading h2").first().letterfx({"fx":"fall", "timing":500});
+setTimeout(swirl, 500);}
+
+
+// Projects heading
+flyRight()
+function flyRight(){
+$(".flyRightFunction h2").letterfx({"fx":"swirl", "timing":500});
+setTimeout(flyRight, 500);}
+
+
+// about heading
+fall()
+function fall(){
+$(".heading h2").last().letterfx({"fx":"grow", "timing":500});
+setTimeout(fall, 500);}

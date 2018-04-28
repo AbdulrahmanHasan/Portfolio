@@ -1,0 +1,40 @@
+$navbarItemsHover:".fadeInDown .nav-pills .nav-link.active, .nav-pills .show > .nav-link";
+$lineNavItem: ".fadeInDown .navbar-nav a:hover:after";
+
+$themes: #{$yellowTheme} #{$orangeTheme}  #{$blueTheme};
+@each $theme, $themeColor, $ThemeName, $modelCardBackgroundColor, $cardShadowColor in
+  (#{$yellowTheme}, $yellowThemeColor, 'Yellow', #34495E, rgba(0, 0, 0, 0.2)),
+  (#{$orangeTheme}, $orangeThemeColor, 'Orange', #34495E, rgba(0, 0, 0, 0.2)),
+  (#{$blueTheme}, $blueThemeColor, 'Blue', #252A34, rgba(255, 255, 255, 0.2)) {
+    #{$theme} .main-color {
+      color: $themeColor !important;
+    }
+    #{$theme} .main-background {
+      background-color: $themeColor !important;
+    }
+    #{$theme} .borderColor {
+      border-color: $themeColor!important;
+    }
+    #{$theme}  #chartRadar#{$ThemeName},
+    #{$theme} .chart#{$ThemeName} {
+      display: block!important;
+    }
+    #{$theme} .hover-color:hover,
+    #{$theme} #{$navbarItemsHover}
+    #{$theme} .navbar-nav a
+     {
+      color:$themeColor!important;
+      @include transition(0.35s);
+    }
+    #{$theme} #{$lineNavItem} {
+     width: 100%;
+     background: $themeColor;
+    }
+    #{$theme} .card, #{$theme} .modal-content
+    {
+      background: $modelCardBackgroundColor!important;
+    }
+    #{$theme} .skills .card {
+      box-shadow: 0 4px 8px 0 $cardShadowColor,0 6px 20px 0 $cardShadowColor;
+    }
+  }

@@ -1,0 +1,88 @@
+.skills {
+    height: auto!important;
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: -25px;
+  }
+  #{$languageCharts} {
+    height: 95px;
+    margin-top: 10px;
+
+    span {
+      font-size: 1.5em;
+      font-weight: normal;
+      position: absolute;
+      top: 85px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .language {
+    padding-top: 56px;
+    h3 {
+      @media screen and (max-width:767px) {
+        display: none;
+      }
+    }
+  }
+
+  .card {
+    top: -5px;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      box-shadow: none;
+      top: 0;
+    }
+    .modal {
+      padding-right: 0;
+      z-index: 9999;
+      cursor: auto;
+        .close {
+          color: #e9e1e1;
+          text-shadow: 0 1px 0 #020101;
+          opacity: 1;
+          &:hover {
+            color: #fff;
+            opacity: .75;
+          }
+        }
+      }
+      .modal-body {
+        padding: .6rem;
+        border-top: 1px solid #64696e;
+        border-bottom: 1px solid #64696e;
+      }
+    }
+    h5 {
+      margin: 15px 0 5px;
+    }
+
+    .card-body {
+      padding: 1.25rem 1.25rem 0;
+    }
+  .progress {
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.3);
+  }
+}
+
+#chartRadarOrange, #chartRadarYellow, #chartRadarBlue, #{$languageCharts} {
+  display: none !important;
+}
+
+.card-deck {
+  @media screen and (max-width:1199px) {
+    margin-bottom: 19px;
+  }
+}
+#chartRadar {
+  @media screen and (min-width:992px) {
+    max-width:360px;
+    max-height: 360px;
+    margin-left: 7.5%;
+
+  }
+}

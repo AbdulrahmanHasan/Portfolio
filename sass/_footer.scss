@@ -1,0 +1,42 @@
+footer {
+  ul {
+    margin-top: 2rem;
+    text-align: start;
+  }
+  h3, h4{
+    margin-top: 2rem;
+  }
+
+  .contant {
+    margin-top: 2rem;
+    text-align: center;
+    li {
+      margin: 0px 15px;
+      display: inline-block;
+      a {
+        color:#efefef;
+        text-decoration: none;
+        padding-right: 5px;
+      }
+    }
+  }
+  .copyR {
+    background-color:#eee;
+    p {
+      color:#000;
+    }
+  }
+}
+
+$socailMedia: 'facebook-square' codepen github whatsapp envelope;
+@each $socail, $color in
+  ('facebook-square', #3a569f),
+  ('codepen', #555),
+  ('github', #5e487e),
+  ('whatsapp', #34AF23),
+  ('envelope', #0264fe) {
+    .fa-#{$socail}:hover {
+      color: $color;
+      @include transition(0.2s);
+    }
+  }
