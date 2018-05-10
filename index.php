@@ -289,9 +289,8 @@
             <li><a href="https://www.facebook.com/abdulrahman.Hasan.1996" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
             <li><a href="https://github.com" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
             <li><a href="https://codepen.io/LR96/" target="_blank"><i class="fab fa-codepen fa-2x"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=00905513846511" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+            <li><a href="tel:(+90)5513846511"><i class="fa fa-mobile-alt fa-2x" aria-hidden="true"></i></a></li>
             <li><a href="mailto:abdulrahmanhasan96@hotmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
-
           </ul>
         </div>
       </div>

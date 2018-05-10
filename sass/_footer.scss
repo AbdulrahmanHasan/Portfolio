@@ -28,12 +28,12 @@ footer {
   }
 }
 
-$socailMedia: 'facebook-square' codepen github whatsapp envelope;
+$socailMedia: 'facebook-square' codepen github 'mobile-alt' envelope;
 @each $socail, $color in
   ('facebook-square', #3a569f),
   ('codepen', #555),
   ('github', #5e487e),
-  ('whatsapp', #34AF23),
+  ('mobile-alt', #b54848),
   ('envelope', #0264fe) {
     .fa-#{$socail}:hover {
       color: $color;
