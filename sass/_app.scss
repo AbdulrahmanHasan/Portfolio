@@ -8,11 +8,12 @@ p,
 span {
   text-align: center;
 }
+
 body {
   font-family: 'Old Standard TT', serif;
   color: #fff;
   font-size: 17px;
-  overflow-y: auto!important;
+  overflow: hidden;
   padding-right: 0!important;
 }
 
@@ -48,5 +49,103 @@ body::-webkit-scrollbar-thumb {
     font-size: 32px;
     color: #e0e0e0;
     margin: 0;
+  }
+}
+progress {
+  background:#282828;
+  height: 2px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+progress[value]::-webkit-progress-value {
+  background:#282828;
+  height: 2px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+progress::-moz-progress-bar {
+  background:#282828;
+  height: 2px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+// to fill window with background animation
+.loadingWindow {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  position: fixed;
+  animation: LoadingBackground 5.2s ease-in-out infinite;
+  .spinner, .spinner2 {
+    // Centering Percentage Width/Height Elements
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    //radiusing the element
+    border: 2px solid #fff;
+    border-right-color: #03A9F4;
+    border-radius: 50%;
+  }
+  .spinner {
+    width: 50px;
+    height: 50px;
+    animation: firstRotator 1.3s infinite;
+  }
+  //smaller div
+  .spinner2 {
+    width: 35px;
+    height: 35px;
+    animation: secondRotator 1.3s infinite;
+  }
+}
+
+//smaller div animation
+@keyframes firstRotator {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+    border-right-color: #fff;
+    border-top-color: #03A9F4;
+    border-bottom-color: #03A9F4;
+  }
+}
+//bigger div animation
+@keyframes secondRotator {
+  from, to {
+    transform:translate(-50%,-50%);
+  }
+  25% {
+    transform:translate(70%);
+    border-top-color: #03A9F4;
+  }
+  50% {
+    transform:translate(70%);
+    border-bottom-color: #03A9F4;
+  }
+  to {
+    border-left-color: #03A9F4;
+  }
+}
+// to change loading background color
+@keyframes LoadingBackground {
+  from, to {
+    background:#a1d09b;
+  }
+  25% {
+    background:#9ba5d0;
+  }
+  50% {
+    background:#d09bb6;
+  }
+  75% {
+    background:#2791a1;
   }
 }

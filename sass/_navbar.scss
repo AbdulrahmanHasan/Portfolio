@@ -31,11 +31,9 @@
         @include transition(0.4s);
         z-index: 444;
       }
-
     button {
       border-color:#828282;
     }
-
   }
   &.fadeInDown a:hover , &.fadeInDown:active a {
     background-color:  rgba(0,0,0,0.8);

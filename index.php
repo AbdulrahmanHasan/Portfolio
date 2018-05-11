@@ -19,6 +19,8 @@
 <body data-default-color="yellow" data-spy="scroll" data-target="#Navbar" data-offset="70">
   <main class="backgrounds-height" id="Home">
     <header>
+      <progress class="main-background" value="0" id="progressbar" max="100">
+      </progress>
       <nav class="animated navbar navbar-expand-lg navbar-dark navbar-transparent fadeIn" id="Navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -299,6 +301,11 @@
       <p class="m-0">Copyright <i class="far fa-copyright fa-sm"></i> 2018 by Abdulrahman Hasan. All Rights Reserved.</p>
     </div>
   </footer>
+  <div class="loadingWindow">
+    <div class="spinner">
+      <div class="spinner2"></div>
+    </div>
+  </div>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/popper.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>

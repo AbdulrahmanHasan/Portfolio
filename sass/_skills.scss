@@ -33,7 +33,7 @@
     cursor: pointer;
     @include transition;
     &:hover {
-      box-shadow: none;
+      box-shadow: none!important;
       top: 0;
     }
     .modal {

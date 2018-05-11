@@ -20,6 +20,31 @@ $document.scroll(function (){
     $element.removeClass('borderColor')
   }
 });
+
+ // loading screen
+ $(window).on('load', function() {
+   $('.spinner').fadeOut(3500, function() {
+      //Show The Scroll
+     $('body').css("overflow-y", "auto");
+
+     $(this).parent().fadeOut(250, function(){
+       $(this).remove();
+     });
+   });
+ });
+
+ // scroll progressbar
+$(window).scroll(function () {
+  var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+        scrollPercent = (s / (d-c)) * 100;
+        var position = scrollPercent;
+
+   $("#progressbar").attr('value', position);
+
+});
+// make backgrounds' width and height = windows' height and width
 $(function () {
   'use strict'
 
