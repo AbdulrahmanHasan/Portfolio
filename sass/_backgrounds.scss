@@ -1,19 +1,19 @@
 main {
-  @include backgroundM('../images/back.png');
+  @include backgroundM('../images/min/back.png');
 }
 
 #{$yellowTheme} .skills , #{$orangeTheme} .skills, #{$yellowTheme} .Projects , #{$orangeTheme} .Projects {
-  @include backgroundM('../images/skills background.png', 900px);
+  @include backgroundM('../images/min/skills background.png', 900px);
 }
 
 #{$blueTheme} .skills, #{$blueTheme} .Projects  {
-  @include backgroundM('../images/skills background 2.jpg', 900px);
+  @include backgroundM('../images/min/skills background 2.jpg', 900px);
 }
 
 .heading {
-  @include backgroundM('../images/heading background.jpg', 110px);
+  @include backgroundM('../images/min/heading background.jpg', 110px);
 }
 
 footer {
-  @include backgroundM('../images/footer Background.jpg', 290px);
+  @include backgroundM('../images/min/footer Background.jpg', 290px);
 }
